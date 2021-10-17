@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt('Enter a number:'))
+    let a=0,b=1,c=1
+    for (let i = 1; i <= n; i++) {
+        c = a + b;
+        a = b;
+        b = c;
+        if (c%5===0) {
+            document.write(c + '<br>')
+        }
+    }
+</script>
+</body>
+</html>
