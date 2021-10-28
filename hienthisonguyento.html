@@ -5,6 +5,34 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+let a = prompt('nhap n')
+    let count = 0;
+    let i = 2;
+    while (count<a) {
 
+        let check = true;
+        if (i < 2) {
+            continue;
+        } else {
+            for (let j = 2; j < i - 1; j++) {
+                if (i % j === 0) {
+                    check = false;
+                    break;
+                }
+            }
+        }
+        if (check) {
+            count++
+            document.write(i + "&nbsp")
+        }
+
+        i++
+
+    }
+
+
+
+</script>
 </body>
 </html>
